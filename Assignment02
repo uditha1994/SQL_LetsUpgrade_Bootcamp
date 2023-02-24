@@ -1,0 +1,42 @@
+01. Create a table called "students" with columns "id" (integer, primary key, auto-increment), "name" (text), "age" (integer), and "gender" (text).
+
+Answer:
+	CREATE TABLE students (
+  		id INT AUTO_INCREMENT PRIMARY KEY,
+  		name TEXT,
+  		age INT,
+  		gender TEXT
+	);	
+
+02. Insert three rows of data into the "students" table.
+
+Answer :
+	INSERT INTO students (name, age, gender) VALUES 
+	('Uditha Lashan', 28, 'Male'), 
+	('Maheshika Dissanayake', 27, 'Female'), 
+	('Kasun Kalhara', 35, 'Male');
+
+03. Retrieve all rows from the "students" table.
+
+Answer :
+	SELECT * FROM students;
+	
+04. Update the name of the student with id = 2 to "Janet".
+
+Answer :
+	UPDATE students SET students.name="Janet" WHERE id='2';
+	
+05. Delete the row with id = 3 from the "students" table.
+
+Answer :
+	DELETE FROM students WHERE id='3';
+	
+06. Retrieve all rows from the "students" table again to verify that the changes have been made.
+
+Answer :
+	SELECT * FROM students;
+	
+	id;name;age;gender
+	1;Uditha Lashan;28;Male
+	2;Janet;27;Female
+
